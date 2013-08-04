@@ -5,8 +5,8 @@ app.use(express.logger());
 app.get('/', function(request, response) {
 
   var fs = require('fs');
-  var file_buffer = fs.readFileSync('index.html');
-  var file_string = file_buffer.toString('String');
+  var file_buffer = fs.readFileSync("index.html");
+  var file_string = file_buffer.toString("string");
 
   response.send(file_string);
 });
