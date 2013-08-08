@@ -4,7 +4,7 @@ var htmlfile = "index.html";
 
 var app = express.createServer(express.logger());
 
-apt.get('/', function(request, response) {
+app.get('/', function(request, response) {
     var html = fs.readFileSync(htmlfile).toString();
     response.send(html);
 });
